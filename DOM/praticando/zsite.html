@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="zindex.js"></script>
+    <title>Cadastro de imóveis</title>
+  </head>
+  <body>
+    <h2>Cadastro de imóveis</h2>
+    <form id="form">
+      <fieldset>
+        <p>
+          <label for="type">Tipo: </label>
+          <select name="type" id="type" required>
+            <option value="Casa">Casa</option>
+            <option value="Apartamento">Apartamento</option>
+          </select>
+        </p>
+        <p>
+          <label for="area">Área (<small>m²</small>): </label>
+          <input type="number" name="area" id="area" min="0" required />
+        </p>
+        <p>
+          <label>Alugado: </label>
+          <select name="rent" id="rent" required>
+            <option value="Alugado">Sim</option>
+            <option value="Disponível">Não</option>
+          </select>
+        </p>
+        <p>
+          <button type="button" onclick="saveDatas()">Salvar dados</button>
+          <button type="button" onclick="cleanForm()">Limpar dados</button>
+        </p>
+      </fieldset>
+      <h3>Imóveis cadastrados</h3>
+      <ul id="listaImovel"></ul>
+    </form>
+  </body>
+</html>

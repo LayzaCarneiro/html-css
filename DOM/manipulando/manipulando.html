@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>|| Manipulando DOM ||</title>
+    <script src="manipulando.js"></script>
+  </head>
+  <body>
+    <h3>Home Registration</h3>
+    <div>
+      <form action="">
+        <p>
+          <label for="area">Área: </label>
+          <input type="text" name="area" id="area" />
+        </p>
+        <p>
+          <label for="number">Número: </label>
+          <input type="text" name="number" id="number" />
+        </p>
+        <p>
+          <label for="bairro">Bairro: </label>
+          <input type="text" name="bairro" id="bairro" />
+        </p>
+        <p>
+          <label for="city">Cidade: </label>
+          <input type="text" name="city" id="city" />
+        </p>
+        <p>
+          <button onclick="saveHouse()" type="button">Salvar</button>
+        </p>
+      </form>
+      <ul id="houseList"></ul>
+    </div>
+  </body>
+</html>

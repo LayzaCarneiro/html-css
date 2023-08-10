@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos no HTML</title>
+    <script src="functions.js"></script>
+  </head>
+  <body>
+    <button onclick="clickMe()">Clique-me !!!</button>
+    <p>
+      <label for="focus">Focus: </label>
+      <input type="text" name="focus" id="focus" onfocus="focusMe()" />
+    </p>
+    <p>
+      <label for="blur">Blur: </label>
+      <input type="text" name="blur" id="blur" onblur="blurMe()" />
+    </p>
+    <p>
+      <label for="change">Change: </label>
+      <input type="text" name="change" id="change" onchange="changeMe()" />
+    </p>
+    <p onmouseover="overMe()">Passe o mouse sobre mim !!</p>
+  </body>
+</html>

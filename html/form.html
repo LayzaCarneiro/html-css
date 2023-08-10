@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário - Astronauta</title>
+  </head>
+  <body>
+    <h2>Cadastro da liga dos astronautas</h2>
+    <form>
+      <label for="name">Nome: </label>
+      <input type="text" name="name" id="name" required />
+      <br /><br />
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" autocomplete="off" required />
+      <label for="pwd"> - Password: </label>
+      <input type="password" name="pwd" id="pwd" required />
+      <br /><br />
+      <label for="bday">Data de nascimento: </label>
+      <input type="date" name="bday" id="bday" required />
+      <label for="photo"> - Foto: </label>
+      <input type="file" name="photo" id="photo" />
+      <br /><br />
+      <label for="nacionality">Nacionalidade: </label>
+      <select id="nacionality">
+        <option value="Brasileira">Brasileira</option>
+        <option value="Russa">Russa</option>
+        <option value="Norte-americana">Norte-americana</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Indiana">Indiana</option>
+        <option value="Chinesa">Chinesa</option>
+      </select>
+      <label for="female"> - Gênero: F</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="male"> M</label>
+      <input type="radio" name="gender" id="male" />
+      <br />
+      <p>
+        Suas principais qualidades: <br />
+        <input type="checkbox" name="quality1" id="quality1" />
+        <label for="quality1">Inteligência</label>
+        <input type="checkbox" name="quality2" id="quality2" />
+        <label for="quality2">Resiliência</label>
+        <input type="checkbox" name="quality3" id="quality3" />
+        <label for="quality3">Proatividade</label>
+        <input type="checkbox" name="quality4" id="quality4" />
+        <label for="quality4">Preparo físico</label>
+      </p>
+      <textarea
+        name="coment"
+        id="coment"
+        cols="30"
+        rows="8"
+        placeholder="Insira aqui algum comentário, caso queira."
+      ></textarea>
+      <br /><br />
+      <input type="button" value="Enviar" />
+      <input type="reset" value="Resetar" />
+    </form>
+  </body>
+</html>

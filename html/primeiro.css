@@ -1,0 +1,17 @@
+/*aulaLista.html*/
+
+p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #20d9d0;
+}
+body {
+  background-image: url("https://img.freepik.com/vetores-gratis/tons-de-verde-degrade-de-fundo_23-2148367626.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  border: 3px inset #b33d07;
+}
+.titleColor {
+  color: blue;
+}
